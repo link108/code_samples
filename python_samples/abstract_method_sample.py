@@ -3,7 +3,7 @@ __author__ = 'cmotevasselani'
 from abc import abstractmethod, ABCMeta
 
 
-class Byah:
+class AbstractMethodSample:
 
     __metaclass__ = ABCMeta
 
@@ -13,19 +13,19 @@ class Byah:
 
 
 
-class ByahFixed(Byah):
+class AbstractMethodSamplesFixed(AbstractMethodSample):
 
 
     def fix_me(self):
         print "Fixed"
 
 
-class NotFixed(Byah):
+class AbstractMethodSamplesNotFixed(AbstractMethodSample):
 
     def blah(self):
         print "hey"
 
-byahFixed = ByahFixed()
+byahFixed = AbstractMethodSamplesFixed()
 byahFixed.fix_me()
 
 # Will fail

@@ -5,7 +5,6 @@ from urlparse import urlparse, parse_qs
 filename = "data/test"
 output_file = "data/tmp"
 
-"""
 # file char by char
 with open(filename) as f:
     for line in f:
@@ -26,7 +25,6 @@ url = urlparse("http://byah.org:8080/sample/test?with=query&params=byah")
 params = parse_qs(url.query)
 print 'url: ' + url
 
-"""
 
 # list
 
