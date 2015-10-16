@@ -23,7 +23,7 @@ with open(filename) as f:
 # url stuff
 url = urlparse("http://byah.org:8080/sample/test?with=query&params=byah")
 params = parse_qs(url.query)
-print 'url: ' + url
+print 'url: ' + str(url)
 
 
 # list
