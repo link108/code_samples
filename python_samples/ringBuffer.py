@@ -40,14 +40,15 @@ class RingBuffer:
         return value
 
 
-ringBuffer = RingBuffer(5)
-ringBuffer.add(6)
-ringBuffer.add(7)
-ringBuffer.remove()
-ringBuffer.remove()
-ringBuffer.remove()
-ringBuffer.add(8)
-ringBuffer.add(9)
-ringBuffer.add(10)
-ringBuffer.add(11)
-ringBuffer.remove()
+if __name__ == "__main__":
+    ringBuffer = RingBuffer(5)
+    ringBuffer.add(6)
+    ringBuffer.add(7)
+    ringBuffer.remove()
+    ringBuffer.remove()
+    ringBuffer.remove()
+    ringBuffer.add(8)
+    ringBuffer.add(9)
+    ringBuffer.add(10)
+    ringBuffer.add(11)
+    ringBuffer.remove()
