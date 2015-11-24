@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+
+make logger
+
+./logger

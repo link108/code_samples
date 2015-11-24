@@ -1,0 +1,9 @@
+.*.swp
+server
+client
+*dSYM
+tags
+todo
+.idea/
+*.bak
+*.log

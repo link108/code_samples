@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+make clean
+clear
+make
+
+echo "Testing"
+./server &
+sleep 1
+echo
+./client
+echo
+
+
+kill $(ps -ef | grep './server' | grep -v grep | awk '{print $2}')
+
