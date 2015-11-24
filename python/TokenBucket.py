@@ -11,7 +11,10 @@ class TokenBucket:
     def __init__(self, rate, max_count, start_filled=False):
         self.rate = rate             # number of tokens per second
         self.max_count = max_count      # max size of bucket
-        self.token_count = 0
+        if start_filled is True:
+            self.token_count = max_count
+        else:
+            self.token_count = 0
         self.timestamp = datetime.now()
 
     # Returns True if all tokens can be taken, False otherwise

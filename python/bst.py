@@ -55,6 +55,7 @@ def print_postorder(root, values=None):
     values.append(root.value)
     return values
 
+
 def print_levelorder(root):
     nodes_visited = []
     node_queue = Queue.Queue()
@@ -69,8 +70,6 @@ def print_levelorder(root):
     return nodes_visited
 
 
-
-
 if __name__ == "__main__":
 
     print "create root node with value 5"
@@ -82,7 +81,6 @@ if __name__ == "__main__":
     insert(r, 2)
     insert(r, 4)
     insert(r, 9)
-
 
     print "inorder print:"
     print ' '.join([str(x) for x in print_inorder(r, [])])
