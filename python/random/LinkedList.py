@@ -31,7 +31,10 @@ class LinkedList:
         return_node = self.tail
         new_tail = self.tail.prev
         self.tail = new_tail
-        self.tail.next = None
+        if self.tail:
+          self.tail.next = None
+        else:
+          self.head = None
         print "returning: " + str(return_node.value)
         return return_node
 
@@ -58,5 +61,6 @@ l.append(4)
 l.append(5)
 l.pop()
 print l
-
-
+l.pop()
+l.pop()
+print l
