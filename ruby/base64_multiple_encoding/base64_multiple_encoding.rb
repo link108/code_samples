@@ -65,6 +65,6 @@ def prebuilt_encoding_counts
 end
 
 
-Benchmark.bm(FUNCTIONS.map(&:length).max) do |x|
+Benchmark.bmbm(FUNCTIONS.map(&:length).max) do |x|
   FUNCTIONS.each { |label| x.report(label) { send(label) } }
 end
