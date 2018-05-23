@@ -22,9 +22,8 @@ def get_ascii_encoding_path(max_encoding_count)
   end  
 end
 
-def print_ascii_encoding_path(ascii_encoding_path)
+def print_ascii_encoding_path(ascii_encoding_path, n=3)
   ascii_encoding_path.each do |key, value|
-    n = 3
     final_encoding = value.map { |v| v.gsub('=', '') }.last
     first_n_chars = final_encoding[0..n] 
     puts "#{key.inspect}: first_#{n}_chars: #{first_n_chars }, length: #{final_encoding.length}"
